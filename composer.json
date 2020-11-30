@@ -1,6 +1,6 @@
 {
-  "name": "summerblue/generator",
-  "description": "Extend Laravel's generators scaffold.",
+  "name": "tomcath/generator",
+  "description": "Extend Laravel's generators scaffold (using the original model path).",
   "keywords": [
     "laravel",
     "generators",
@@ -17,6 +17,10 @@
     {
       "name": "Summer",
       "email": "summer@learnku.com"
+    },
+    {
+      "name": "tomcath",
+      "email": "tomcath@foxmail.com"
     }
   ],
   "require": {
