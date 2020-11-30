@@ -81,7 +81,7 @@ class MakePolicy
         if (strpos($content, $policy_name) === false) {
             $content = str_replace(
                 'policies = [',
-                "policies = [\n\t\t \App\Models\\$model::class => \App\Policies\\$policy_name::class,",
+                "policies = [\n\t\t \App\\$model::class => \App\Policies\\$policy_name::class,",
                 $content
                 );
             $this->files->put($path, $content);
