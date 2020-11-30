@@ -1,4 +1,4 @@
-# laravel 7.x 默认Model路径使用
+# laravel 7.x 使用默认 Model 路径 生成文件
 
 在原版生成器的基础上，修改了 Model 的生成路径，以及一些命名空间的路径。使其可以配合 laravel 原版的 Model 路径使用。
 
@@ -126,3 +126,4 @@ Generate the following:
 
 ## Thanks to
 - [laralib/l5scaffold](https://github.com/laralib/l5scaffold)
+- [summerblue/generator](https://github.com/summerblue/generator)
