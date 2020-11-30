@@ -78,18 +78,18 @@ class MakeModelObserver
         if (strpos($content, $observer_name) === false) {
 
             // Using UserOberser as anchor
-            if (strpos($content, 'App\Models\User') === false) {
+            if (strpos($content, 'App\User') === false) {
                 $content = str_replace(
                 "public function boot()
     {",
-                "public function boot()\n\t{\n\t\t\App\Models\User::observe(\App\Observers\UserObserver::class);\n",
+                "public function boot()\n\t{\n\t\t\App\User::observe(\App\Observers\UserObserver::class);\n",
                 $content
                 );
             }
 
             $content = str_replace(
-                'App\Models\User::observe(\App\Observers\UserObserver::class);',
-                "App\Models\User::observe(\App\Observers\UserObserver::class);\n\t\t\App\Models\\$model::observe(\App\Observers\\$observer_name::class);",
+                'App\User::observe(\App\Observers\UserObserver::class);',
+                "App\User::observe(\App\Observers\UserObserver::class);\n\t\t\App\\$model::observe(\App\Observers\\$observer_name::class);",
                 $content
                 );
             $this->files->put($path, $content);

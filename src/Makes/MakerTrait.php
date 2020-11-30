@@ -193,11 +193,11 @@ trait MakerTrait
         }
         elseif($path == "model")
         {
-            return './app/Models/'.$file_name.'.php';
+            return './app/'.$file_name.'.php';
         }
         elseif($path == "model-trait")
         {
-            return './app/Models/Traits/'.$file_name.'Operation.php';
+            return './app/Traits/'.$file_name.'Operation.php';
         }
         elseif($path == "seed")
         {

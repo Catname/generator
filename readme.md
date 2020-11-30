@@ -1,3 +1,7 @@
+# laravel 7.x 默认Model路径使用
+
+在原版生成器的基础上，修改了 Model 的生成路径，以及一些命名空间的路径。使其可以配合 laravel 原版的 Model 路径使用。
+
 # Laravel 5.x Scaffold Generator
 
 [![Travis](https://img.shields.io/travis/summerblue/generator.svg?style=flat-square)](https://github.com/summerblue/generator)
